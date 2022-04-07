@@ -10,7 +10,7 @@ loginbutton.addEventListener("click", login)
 function login(){
 const req = { //오브젝트
   id : id.value,
-  psword : pw.value,
+  pw : pw.value,
 };
 // console.log(req); 오브젝트 객체로 전달
 // console.log(JSON.stringify(req)); 문자열로 전달

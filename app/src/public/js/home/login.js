@@ -12,5 +12,13 @@ const req = { //오브젝트
   id : id.value,
   psword : pw.value,
 };
-console.log(req);
+// console.log(req); 오브젝트 객체로 전달
+// console.log(JSON.stringify(req)); 문자열로 전달
+  fetch("/login", {
+    method: "POST",
+    headers:{
+      "Content-Type" : "application/json",
+    },
+    body : JSON.stringify(req),
+  });
 }
